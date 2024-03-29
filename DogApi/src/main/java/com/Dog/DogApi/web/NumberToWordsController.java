@@ -6,13 +6,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.ws.client.core.support.WebServiceGatewaySupport;
 
 import com.Dog.DogApi.client.NumberClient;
 import com.dataaccess.webservicesserver.NumberToWordsResponse;
 
 @RestController
-public class NumberToWordsController extends WebServiceGatewaySupport{
+public class NumberToWordsController {
 
 	
 	@Autowired

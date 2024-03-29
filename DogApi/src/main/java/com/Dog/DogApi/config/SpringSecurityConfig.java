@@ -18,16 +18,16 @@ import com.Dog.DogApi.client.NumberClient;
 public class SpringSecurityConfig {
 
 
-//	 @Bean
-//	public SecurityFilterChain filter (HttpSecurity http) throws Exception{
-//		http
-//		.csrf().disable()
-//		.authorizeRequests().anyRequest()
-//		.authenticated().and().httpBasic();
-//		
-//		return http.build();
-//		}
-//	
+	 @Bean
+	public SecurityFilterChain filter (HttpSecurity http) throws Exception{
+		http
+		.csrf().disable()
+		.authorizeRequests().anyRequest()
+		.authenticated().and().httpBasic();
+		
+		return http.build();
+		}
+	
 	
 	//https://spring.io/blog/2022/02/21/spring-security-without-the-websecurityconfigureradapter
 	  @Bean
